@@ -28,7 +28,7 @@ namespace Lab26George
             // identity database connection
             services.AddDbContext<ApplicationDBContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("Lab26GeorgeContext")));
-            // identity services
+            // identity services?
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDBContext>()
                 .AddDefaultTokenProviders();
