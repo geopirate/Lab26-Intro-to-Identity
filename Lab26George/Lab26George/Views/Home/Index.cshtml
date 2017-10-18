@@ -1,5 +1,6 @@
 ﻿@model List<Lab26George.Models.Player>
 @{
+    // I made a layout because I'm not a savage
     ViewData["Title"] = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -8,12 +9,12 @@
 <p>Please excuse the mess as the site is still under construction.</p><br />
 <a asp-action="index" asp-controller="Player">Edit Character here.</a>
 
+<!-- I would probably make these boxes to make this look neater --> 
 @foreach (var item in Model)
 {
-
-        <h3>@item.Title</h3>
-        <p>@item.Height</p>
-        <p>@item.Health</p>
-
-
+    <br />
+    <h3>@item.Title</h3>
+    <p>@item.Height</p>
+    <p>@item.Health</p>
+    <br />
 }
